@@ -1,27 +1,52 @@
-#container {
+ion-content {
+  --background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.logo-container {
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.logo {
+  width: 260px;
+  height: 200px;
+  margin-bottom: 40px;
+  margin-top: 150px; /* Ajuste este valor conforme necessário */
 }
 
-#container p {
+
+.input-container {
+  display: flex;
+  flex-direction: column; /* Alinha os itens verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  margin-top: 1px;
+}
+.user-icon {
+  font-size: 60px;
+  color: #199dd2;
+  margin-right: 10px; /* Espaço entre o ícone e o campo de entrada */
+  margin-bottom: 20px; /* Adiciona espaço abaixo do ícone */
+}
+
+.name-input {
+  border: 2px solid #5bb5d9;
+  border-radius: 25px;
+  padding: 10px;
+  width: 80%;
   font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+  color: #0a3d52;
+  margin-bottom: 15px;
+  text-align: center; /* Centraliza o texto do placeholder */
 }
-
-#container a {
-  text-decoration: none;
+.enter-button {
+  margin-top: 10px;
+  background: linear-gradient(to right, #1cb0eb, #0d506c);
+  --ripple-color: #ffffff;
+  width: 80%;
+  font-size: 16px;
+  border-radius: 40px;
 }
